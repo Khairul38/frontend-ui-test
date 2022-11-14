@@ -1,71 +1,166 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { HiOutlineMoon } from "react-icons/hi";
+import { MdWbSunny } from "react-icons/md";
 import Logo from "../../assets/logo/logo.png";
 
+const services = [
+  {
+    id: 1,
+    title: "Travel Booking",
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "Flight Booking",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Car Booking",
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "Fivestar Hotel",
+    link: "#",
+  },
+  {
+    id: 5,
+    title: "Traveling",
+    link: "#",
+  },
+];
 
+const support = [
+  {
+    id: 1,
+    title: "Account",
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "Legal",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Contact",
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "Terms & Condition",
+    link: "#",
+  },
+  {
+    id: 5,
+    title: "Privacy Policy",
+    link: "#",
+  },
+];
+
+const business = [
+  {
+    id: 1,
+    title: "Success",
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "About Locato",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Blog",
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "Information",
+    link: "#",
+  },
+  {
+    id: 5,
+    title: "Travel Guide",
+    link: "#",
+  },
+];
 
 const Footer = () => {
+  const [toggle, setToggle] = useState("light");
+
   return (
     <footer className="p-3 sm:py-6 sm:px-10">
       <div className="md:flex md:justify-between">
-        <div className="mb-6 md:mb-0">
+        <div className="mb-6 md:mb-0 space-y-5">
           <Link href="/" className="flex items-center">
             <img src={Logo.src} className="mr-3 h-9" alt="TripGuide Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap">
               TripGuide
             </span>
           </Link>
+          <p>
+            This is the team that specializes in <br /> making sure in the find
+            it a <br /> your interior looks cool
+          </p>
+          <div className="flex">
+            <div className="flex items-center bg-white p-1.5 rounded-xl">
+              <div
+                onClick={() => setToggle("light")}
+                className={`px-6 py-1 cursor-pointer ${
+                  toggle === "light" && "shadow rounded-lg "
+                }`}
+              >
+                <MdWbSunny size={25} />
+              </div>
+              <div
+                onClick={() => setToggle("dark")}
+                className={`px-6 py-1 cursor-pointer ${
+                  toggle === "dark" && "shadow rounded-lg"
+                }`}
+              >
+                <HiOutlineMoon size={25} />
+              </div>
+            </div>
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
             <h2 className="mb-6 text-lg font-bold text-gray-900">Services</h2>
             <ul className="text-gray-600">
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Travel booking
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Flight Booking
-                </a>
-              </li>
+              {services.map((s) => (
+                <li key={s.id} className="mb-4">
+                  <a href={s.link} className="hover:underline">
+                    {s.title}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
             <h2 className="mb-6 text-lg font-bold text-gray-900">Support</h2>
             <ul className="text-gray-600">
-              <li className="mb-4">
-                <a
-                  href="#"
-                  className="hover:underline "
-                >
-                  Account
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:underline"
-                >
-                  Legal
-                </a>
-              </li>
+              {support.map((sp) => (
+                <li key={sp.id} className="mb-4">
+                  <a href={sp.link} className="hover:underline ">
+                    {sp.title}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
             <h2 className="mb-6 text-lg font-bold text-gray-900">Business</h2>
             <ul className="text-gray-600">
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Success
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Terms &amp; Conditions
-                </a>
-              </li>
+              {business.map((b) => (
+                <li key={b.id} className="mb-4">
+                  <a href={b.link} className="hover:underline ">
+                    {b.title}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
