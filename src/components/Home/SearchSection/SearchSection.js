@@ -1,5 +1,6 @@
 import React from "react";
 import { MdHotel, MdFlightTakeoff, MdDirectionsCar } from "react-icons/md";
+import { BiTransferAlt } from "react-icons/bi";
 import Dropdown from "../../Common/Dropdown";
 import BatuEastJava from "../../../assets/images/batu-east-java.jpg";
 import Kuta from "../../../assets/images/kuta.jpg";
@@ -91,14 +92,22 @@ const SearchSection = () => {
 
             <hr className="my-5" />
 
-            <div className="flex space-x-2">
+            <div className="flex items-center space-x-">
               <div className="flex-1 bg-gray-100 px-5 py-1 rounded-lg border cursor-pointer">
                 <h1 className="font-semibold">Location</h1>
                 <p className="text-gray-400">Where are you from?</p>
               </div>
+
+              <div className="ml-[-11px] mr-[-11px] z-10 bg-white text-gray-400 rounded-full p-0.5">
+                <BiTransferAlt size={25} />
+              </div>
+
               <div className="flex-1 bg-gray-100 px-5 py-1 rounded-lg border cursor-pointer">
                 <h1 className="font-semibold">Check In</h1>
                 <p className="text-gray-400">Add Date</p>
+              </div>
+              <div className="ml-[-11px] mr-[-11px] z-10 bg-white text-gray-400 rounded-full p-0.5">
+                <BiTransferAlt size={25} />
               </div>
               <div className="flex-1 bg-gray-100 px-5 py-1 rounded-lg border cursor-pointer">
                 <h1 className="font-semibold">Check Out</h1>
