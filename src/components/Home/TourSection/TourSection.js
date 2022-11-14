@@ -45,7 +45,7 @@ const TourSection = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-5 mt-8">
+      <div className="grid lg:grid-cols-3 gap-5 mt-8">
         {topTour.map((t) => (
           <div
             key={t.id}
@@ -60,7 +60,7 @@ const TourSection = () => {
             <span className="font text-white text-sm bg-gray-500 bg-opacity-50 rounded-2xl px-4 py-1">
               {t.location}
             </span>
-            <div className="mt-72">
+            <div className="mt-72 xl:mt-96">
               <h1 className="font-semibold text-2xl text-white">
                 {t.title}
               </h1>

@@ -8,8 +8,8 @@ const OfferSection = () => {
         <p>Create a visual identity for your company, and an <br /> overall brand</p>
       </div>
       <div className='bg-white p-2 rounded flex justify-between mt-8 lg:mt-0'>
-        <input className='outline-none px-2' type="text" name="" id="" placeholder='Type your email here' />
-        <button className='bg-black text-white px-6 py-2 rounded ml-10'>Subscribe</button>
+        <input className='outline-none lg:px-2' type="text" name="" id="" placeholder='Type your email here' />
+        <button className='bg-black text-white px-3 lg:px-6 py-2 rounded lg:ml-10'>Subscribe</button>
       </div>
     </div>
   );

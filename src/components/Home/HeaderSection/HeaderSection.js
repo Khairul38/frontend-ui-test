@@ -10,9 +10,9 @@ const HeaderSection = () => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className="h-[65vh] flex items-center"
+      className="h-[70vh] flex items-center"
     >
-      <h1 className="ml-28 text-5xl font-bold">
+      <h1 className="w-5/6 mx-auto text-5xl font-bold">
         Book With Us <br /> And Enjoy Your <br /> Journey !
       </h1>
     </div>

@@ -44,7 +44,7 @@ const PassionSection = () => {
           Most Brilliant reasons Entrada should be your one-stop-shop!
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-5 mt-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
         {travelPassion.map((p) => (
           <div
             key={p.id}
@@ -56,7 +56,7 @@ const PassionSection = () => {
             }}
             className="rounded-lg p-4"
           >
-            <div className="mt-52">
+            <div className="mt-72 lg:mt-52 xl:mt-72">
               <h1 className="font-semibold text-xl text-white">{p.title}</h1>
               <div className="flex items-center space-x-2 mt-2">
                 <button>

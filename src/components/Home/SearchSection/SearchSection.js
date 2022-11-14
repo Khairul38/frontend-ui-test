@@ -64,7 +64,7 @@ const SearchSection = () => {
     <div className="mb-20">
       {/* Section 1 */}
       <div className="flex justify-center relative">
-        <div className="absolute top-[-90px] flex items-end w-5/6 gap-10 bg-white px-12 py-5 rounded-2xl">
+        <div className="absolute top-[-90px] lg:flex lg:items-end w-5/6 gap-10 bg-white px-12 py-5 rounded-2xl">
           <div className="flex-1">
             <div className="flex justify-between">
               <div className="flex space-x-5">
@@ -92,7 +92,7 @@ const SearchSection = () => {
 
             <hr className="my-5" />
 
-            <div className="flex items-center space-x-">
+            <div className="flex items-center">
               <div className="flex-1 bg-gray-100 px-5 py-1 rounded-lg border cursor-pointer">
                 <h1 className="font-semibold">Location</h1>
                 <p className="text-gray-400">Where are you from?</p>
@@ -115,7 +115,7 @@ const SearchSection = () => {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="mt-4 lg:mt-0 flex justify-center">
             <button className="bg-blue-600 text-white rounded-lg px-10 py-4">
               Search
             </button>
@@ -124,7 +124,7 @@ const SearchSection = () => {
       </div>
 
       {/* Section 2 */}
-      <div className="mt-32 text-center">
+      <div className="mt-60 sm:mt-56 lg:mt-32 text-center px-5">
         <h1 className="text-3xl font-bold mb-3">
           Search a best place in the world
         </h1>
@@ -140,7 +140,7 @@ const SearchSection = () => {
       </div>
 
       {/* Section 3 */}
-      <div className="grid grid-cols-4 gap-5 w-5/6 mx-auto mt-12">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 w-5/6 mx-auto mt-12">
         {bestPlaces.map((p) => (
           <div
             key={p.id}

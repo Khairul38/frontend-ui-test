@@ -92,7 +92,7 @@ const Footer = () => {
   const [toggle, setToggle] = useState("light");
 
   return (
-    <footer className="p-3 sm:py-6 sm:px-10">
+    <footer className="p-6 sm:py-6 sm:px-10">
       <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0 space-y-5">
           <Link href="/" className="flex items-center">
@@ -126,7 +126,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div className="grid grid-cols-2 gap-8 sm:gap-20 sm:grid-cols-3">
           <div>
             <h2 className="mb-6 text-lg font-bold text-gray-900">Services</h2>
             <ul className="text-gray-600">
@@ -165,7 +165,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="my-6 border-gray-200 sm:mx-aut lg:my-8" />
+      <hr className="my-6 border-gray-300 sm:mx-aut lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
         <span className="text-sm text-gray-500 sm:text-center">
           © 2022{" "}

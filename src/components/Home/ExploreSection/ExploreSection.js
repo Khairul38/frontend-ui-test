@@ -73,10 +73,13 @@ const ExploreSection = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-5 mt-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
         {exploreWorld.map((e) => (
-          <div key={e.id} className="rounded-xl p-3 bg-white border hover:border-0 hover:shadow-xl cursor-pointer">
-            <img src={e.img.src} alt="" className="rounded-xl w-full h-36" />
+          <div
+            key={e.id}
+            className="rounded-xl p-3 bg-white border hover:border-0 hover:shadow-xl cursor-pointer"
+          >
+            <img src={e.img.src} alt="" className="rounded-xl w-full lg:h-36 xl:h-auto" />
             <div className="flex space-x-2 mt-4">
               <button>
                 <span className="sr-only">1 star</span>

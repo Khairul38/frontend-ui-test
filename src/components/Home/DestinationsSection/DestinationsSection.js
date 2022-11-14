@@ -24,7 +24,7 @@ const DestinationsSection = () => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
-          className="rounded-lg p-3 h-60 col-span-2 row-[span_8_/_span_8]"
+          className="rounded-lg p-3 lg:h-60 col-span-2 row-[span_8_/_span_8]"
         >
           <span className="font-bold text-red-500 text-sm bg-white rounded-xl px-3">
             3.5

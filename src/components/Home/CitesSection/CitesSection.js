@@ -66,7 +66,7 @@ const CitesSection = () => {
           The most searched for cities on TripGuid
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-5 mt-8">
+      <div className="grid lg:grid-cols-2 gap-5 mt-8">
         {trendingCities.map((e) => (
           <div
             key={e.id}
