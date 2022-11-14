@@ -20,7 +20,7 @@ const topTour = [
     img: BgBali,
   },
   {
-    id: 1,
+    id: 3,
     location: "Barcelona",
     title: "Spain",
     details: "10 Popular Places",
